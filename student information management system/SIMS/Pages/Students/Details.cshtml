@@ -1,0 +1,43 @@
+﻿@page "{id:int}"
+@model SIMS.Pages.Students.DetailsModel
+@{
+    ViewData["Title"] = "Student Detail";
+}
+<div class="container position-center">
+    <div class="form-control form-info">
+        <h2 class="title-form">Student Detail</h2>
+        <div class="group-column">
+            <div class="mb-3">
+                <label class="form-label">ID Student</label>
+                <p class="form-control">@Model.Student.StudentId</p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Name of Student</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Student.StudentName) ? "empty" : Model.Student.StudentName)
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date of Birth</label>
+                <p class="form-control">
+                    @(Model.Student.DateOfBirth != DateTime.MinValue ? Model.Student.DateOfBirth.ToString("MM/dd/yyyy") : "empty")
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <p class="form-control">
+                    @(Model.Student.Gender ? "Male" : "Female")
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Course Major</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Student.CourseMajor) ? "empty" : Model.Student.CourseMajor)
+                </p>
+            </div>
+            <div class="mb-3">
+                <a asp-page="/Students/Index" class="btn btn-outline-secondary format-btn">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

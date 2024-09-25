@@ -1,0 +1,340 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\student information management system\\SIMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\datacontexts\\teachercontextcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:datacontexts\\teachercontextcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EE153F8-47E9-4EF6-87BF-125423816C53}|..\\SIMS Testing\\SIMS Testing.csproj|e:\\student information management system\\sims testing\\courseservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\sims.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:sims.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\datacsv\\students.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:datacsv\\students.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EE153F8-47E9-4EF6-87BF-125423816C53}|..\\SIMS Testing\\SIMS Testing.csproj|e:\\student information management system\\sims testing\\studentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\datacsv\\admin.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:datacsv\\admin.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\wwwroot\\images\\icons\\logobtec.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:wwwroot\\images\\icons\\logobtec.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\wwwroot\\css\\style-body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:wwwroot\\css\\style-body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EE153F8-47E9-4EF6-87BF-125423816C53}|..\\SIMS Testing\\SIMS Testing.csproj|e:\\student information management system\\sims testing\\sims testing.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nguyen Trung Tin\\AppData\\Roaming\\Microsoft\\UserSecrets\\053bcd87-b7dd-4cc2-a386-986175f0f14c\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|e:\\student information management system\\sims\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E3193BD-B4E1-4BD9-812A-72EFEB7B9C00}|SIMS.csproj|solutionrelative:pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 244,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeacherContextCSV.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\DataContexts\\TeacherContextCSV.cs",
+              "RelativeDocumentMoniker": "DataContexts\\TeacherContextCSV.cs",
+              "ToolTip": "E:\\student information management system\\SIMS\\DataContexts\\TeacherContextCSV.cs",
+              "RelativeToolTip": "DataContexts\\TeacherContextCSV.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T13:58:27.939Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Students.csv",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\DataCSV\\Students.csv",
+              "RelativeDocumentMoniker": "DataCSV\\Students.csv",
+              "ToolTip": "E:\\student information management system\\SIMS\\DataCSV\\Students.csv",
+              "RelativeToolTip": "DataCSV\\Students.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-08-15T10:07:14.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Students\\Index.cshtml",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Students\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Students\\Index.cshtml",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAAK8AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T10:06:19.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Teachers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Teachers\\Index.cshtml",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Teachers\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Teachers\\Index.cshtml",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAAALUAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T09:58:18.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T09:58:12.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentServiceTest.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS Testing\\StudentServiceTest.cs",
+              "RelativeDocumentMoniker": "..\\SIMS Testing\\StudentServiceTest.cs",
+              "ToolTip": "E:\\student information management system\\SIMS Testing\\StudentServiceTest.cs",
+              "RelativeToolTip": "..\\SIMS Testing\\StudentServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T09:58:06.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Services\\StudentService.cs",
+              "ToolTip": "E:\\student information management system\\SIMS\\Services\\StudentService.cs",
+              "RelativeToolTip": "Services\\StudentService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T09:42:03.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseServiceTest.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS Testing\\CourseServiceTest.cs",
+              "RelativeDocumentMoniker": "..\\SIMS Testing\\CourseServiceTest.cs",
+              "ToolTip": "E:\\student information management system\\SIMS Testing\\CourseServiceTest.cs",
+              "RelativeToolTip": "..\\SIMS Testing\\CourseServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T09:18:10.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Admin.csv",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\DataCSV\\Admin.csv",
+              "RelativeDocumentMoniker": "DataCSV\\Admin.csv",
+              "ToolTip": "E:\\student information management system\\SIMS\\DataCSV\\Admin.csv",
+              "RelativeToolTip": "DataCSV\\Admin.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-08-15T09:32:55.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LogoBTEC.png -  [English (United States)] - PNG [2885x2382, 32 bit, PNG]",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\wwwroot\\Images\\Icons\\LogoBTEC.png",
+              "RelativeDocumentMoniker": "wwwroot\\Images\\Icons\\LogoBTEC.png",
+              "ToolTip": "E:\\student information management system\\SIMS\\wwwroot\\Images\\Icons\\LogoBTEC.png -  [English (United States)] - PNG [2885x2382, 32 bit, PNG]",
+              "RelativeToolTip": "wwwroot\\Images\\Icons\\LogoBTEC.png -  [English (United States)] - PNG [2885x2382, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-08-15T07:15:40.986Z",
+              "EditorCaption": " -  [English (United States)] - PNG [2885x2382, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "E:\\student information management system\\SIMS\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-15T07:15:37.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "style-body.css",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\wwwroot\\css\\style-body.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style-body.css",
+              "ToolTip": "E:\\student information management system\\SIMS\\wwwroot\\css\\style-body.css",
+              "RelativeToolTip": "wwwroot\\css\\style-body.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-15T07:15:36.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Models\\Program.cs",
+              "RelativeDocumentMoniker": "Models\\Program.cs",
+              "ToolTip": "E:\\student information management system\\SIMS\\Models\\Program.cs",
+              "RelativeToolTip": "Models\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T07:15:34.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T07:15:32.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml.cs",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "Pages\\Error.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T07:15:30.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Nguyen Trung Tin\\AppData\\Roaming\\Microsoft\\UserSecrets\\053bcd87-b7dd-4cc2-a386-986175f0f14c\\secrets.json",
+              "ToolTip": "C:\\Users\\Nguyen Trung Tin\\AppData\\Roaming\\Microsoft\\UserSecrets\\053bcd87-b7dd-4cc2-a386-986175f0f14c\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-15T07:00:02.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SIMS Testing",
+              "DocumentMoniker": "E:\\student information management system\\SIMS Testing\\SIMS Testing.csproj",
+              "RelativeDocumentMoniker": "..\\SIMS Testing\\SIMS Testing.csproj",
+              "ToolTip": "E:\\student information management system\\SIMS Testing\\SIMS Testing.csproj",
+              "RelativeToolTip": "..\\SIMS Testing\\SIMS Testing.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-15T06:50:41.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SIMS.csproj",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\SIMS.csproj",
+              "RelativeDocumentMoniker": "SIMS.csproj",
+              "ToolTip": "E:\\student information management system\\SIMS\\SIMS.csproj",
+              "RelativeToolTip": "SIMS.csproj",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-15T06:50:06.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T04:12:31.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "E:\\student information management system\\SIMS\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "E:\\student information management system\\SIMS\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-15T04:11:47.978Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

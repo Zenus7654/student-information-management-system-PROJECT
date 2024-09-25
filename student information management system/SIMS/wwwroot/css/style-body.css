@@ -1,0 +1,107 @@
+﻿main > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+i {
+    margin-left: 5px;
+}
+
+h2 {
+    margin-bottom: .3em;
+}
+
+.position-center {
+    display: flex !important;
+    justify-content: center;
+    /*margin-top: 1.3rem;*/
+}
+
+.form-add-info, .form-edit-info {
+    width: 40% !important;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    flex-direction: column;
+}
+
+.form-search-main {
+    width: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container form > div {
+    width: 90% !important;
+    padding-top: 0;
+}
+
+form > div:first-child {
+    margin-top: 10px;
+}
+
+.form-search-info > div {
+    margin: 0 !important;
+}
+
+.group-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.group-row div {
+    width: 49% !important;
+}
+
+.search-add-info form {
+    width: 85% !important;
+}
+
+.search-add-info div:last-child {
+    width: 15% !important;
+}
+
+.format-btn {
+    width: 100%;
+    height: 45px;
+    font-weight: bold !important;
+}
+
+.format-btn:hover {
+    color: white !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+td a {
+    margin-right: .5rem;
+}
+
+.title-form {
+    margin-top: .3em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#btn-close {
+    position: absolute;
+    right: 0;
+}
+
+#btn-close i {
+    margin: 0;
+    margin-right: 5px;
+}

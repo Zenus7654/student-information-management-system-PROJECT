@@ -1,0 +1,45 @@
+﻿@page "{id:int}"
+@model SIMS.Pages.Teachers.DetailsModel
+@{
+    ViewData["Title"] = "Detail";
+}
+<div class="container position-center">
+    <div class="form-control form-info">
+        <h2 class="title-form">
+            Detail
+        </h2>
+        <div class="group-column">
+            <div class="mb-3">
+                <label class="form-label">ID Teacher</label>
+                <p class="form-control">@Model.Teacher.TeacherId</p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">TeacherName</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Teacher.TeacherName) ? "empty" : Model.Teacher.TeacherName)
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">DateOfBirth</label>
+                <p class="form-control">
+                    @(Model.Teacher.DateOfBirth != DateTime.MinValue ? Model.Teacher.DateOfBirth.ToString("dd/MM/yyyy") : "empty")
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <p class="form-control">
+                    @(Model.Teacher.Gender ? "Male" : "Female")
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">TeacherCourse</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Teacher.TeacherCourse) ? "empty" : Model.Teacher.TeacherCourse)
+                </p>
+            </div>
+                        <div class="mb-3">
+                <a asp-page="/Courses/Index" class="btn btn-outline-secondary format-btn">Quay lại</a>
+            </div>
+        </div>
+    </div>
+</div>

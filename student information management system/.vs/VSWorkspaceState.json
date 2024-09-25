@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SIMS",
+    "\\SIMS Testing",
+    "\\SIMS Testing\\bin",
+    "\\SIMS\\Abstractions",
+    "\\SIMS\\DataContexts",
+    "\\SIMS\\Models",
+    "\\SIMS\\Pages",
+    "\\SIMS\\Pages\\Students",
+    "\\SIMS\\Services"
+  ],
+  "SelectedNode": "\\SIMS Testing\\CourseServiceTest.cs",
+  "PreviewInSolutionExplorer": false
+}

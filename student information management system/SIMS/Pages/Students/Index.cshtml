@@ -1,0 +1,242 @@
+﻿@page
+@model SIMS.Pages.Students.IndexModel
+@{
+	ViewData["Title"] = "Student Page";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["WarningMessage"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["WarningMessage"]
+    </div>
+}
+
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["InfoMessage"]
+    </div>
+}
+
+
+<div class="container">
+    <h2>Student List</h2>
+
+    <div class="container group-row search-add-info">
+        <!-- Form search student -->
+        <form class="form-search-info" method="post" asp-page-handler="Search">
+            <div class="input-group mb-3">
+                <input asp-for="SearchTerm" type="text" class="form-control" placeholder="Enter a studentBtec's name to search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass" style="margin: 0"></i></button>
+            </div>
+        </form>
+        <!-- Button add student-->
+        <div class="mb-3">
+            <button type="button" class="btn btn-outline-primary" id="btn-add">Add Student<i class="fa-solid fa-user-plus"></i></button>
+        </div>
+    </div>
+
+    <!-- Form add student -->
+    <div class="container position-center">
+        <form class="form-control form-add-info" method="post" asp-page-handler="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h2 class="title-form">
+                Form Add Student
+                <button type="button" class="btn btn-outline-danger" id="btn-close"><i class="fa-solid fa-xmark"></i>Close</button>
+            </h2>
+            <div class="group-column">
+                <!-- Form fields for adding student -->
+                <div class="mb-3">
+                    <label asp-for="NewStudent.StudentName" class="form-label">Name of Student</label>
+                    <input asp-for="NewStudent.StudentName" type="text" class="form-control" placeholder="Input fullname">
+                    <span asp-validation-for="NewStudent.StudentName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewStudent.DateOfBirth" class="form-label">DateOfBirth</label>
+                    <input asp-for="NewStudent.DateOfBirth" type="date" class="form-control" asp-format="{0:MM/dd/yyyy}">
+                    <span asp-validation-for="NewStudent.DateOfBirth" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender:</label>
+                    <div class="form-control">
+                        <div class="form-check">
+                            <input asp-for="NewStudent.Gender" class="form-check-input" type="radio" value="true" id="male1">
+                            <label class="form-check-label" for="male1">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="NewStudent.Gender" class="form-check-input" type="radio" value="false" id="female1">
+                            <label class="form-check-label" for="female1">Female</label>
+                        </div>
+                    </div>
+                    <span asp-validation-for="NewStudent.Gender" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="major1">Course Major</label>
+                        <select asp-for="NewStudent.CourseMajor" class="form-select" id="CourseMajor1" required>
+                            <option value="" disabled selected>Select a major</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Networking">Networking</option>
+                            <option value="Professional Practice">Professional Practice</option>
+                            <option value="Database Design & Development">Database Design & Development</option>
+                            <option value="Security">Security</option>
+                            <option value="Managing a Successful Computing Project">Managing a Successful Computing Project</option>
+                            <option value="Website Design & Development">Website Design & Development</option>
+                            <option value="Software Development Life Cycle">Software Development Life Cycle</option>
+                            <option value="Business Intelligence">Business Intelligence</option>
+                            <option value="Cloud computing">Cloud computing</option>
+                            <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                            <option value="Advanced Programming">Advanced Programming</option>
+                            <option value="Internet of Things">Internet of Things</option>
+                            <option value="Application Development">Application Development</option>
+                            <option value="Computing Research Project">Computing Research Project</option>
+                            <option value="Semi-Project">Semi-Project</option>
+                            <option value="Planning a Computing Project">Planning a Computing Project</option>
+                            <option value="Discrete Maths">Discrete Maths</option>
+                            <option value="Data Analytics">Data Analytics</option>
+                            <option value="Business Process Support">Business Process Support</option>
+                            <option value="Applied Programming and Design Principles">Applied Programming and Design Principles</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="NewStudent.CourseMajor" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-info format-btn" value="Create">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Form edit student -->
+    <div class="container position-center">
+        <form class="form-control form-edit-info" method="post" asp-page-handler="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h2 class="title-form">
+                Form Edit Student
+                <button type="button" class="btn btn-outline-danger" id="btn-close"><i class="fa-solid fa-xmark"></i>Close</button>
+            </h2>
+            <div class="group-column">
+                <input type="hidden" asp-for="NewStudent.StudentId" />
+                <div class="mb-3">
+                    <label asp-for="NewStudent.StudentName" class="form-label">Name of Student</label>
+                    <input asp-for="NewStudent.StudentName" type="text" class="form-control" placeholder="Input fullname">
+                    <span asp-validation-for="NewStudent.StudentName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewStudent.DateOfBirth" class="form-label">DateOfBirth</label>
+                    <input asp-for="NewStudent.DateOfBirth" type="date" class="form-control" asp-format="{0:yyyy-MM-dd}">
+                    <span asp-validation-for="NewStudent.DateOfBirth" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender:</label>
+                    <div class="form-control">
+                        <div class="form-check">
+                            <input asp-for="NewStudent.Gender" class="form-check-input" type="radio" value="true" id="male2">
+                            <label class="form-check-label" for="male2">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="NewStudent.Gender" class="form-check-input" type="radio" value="false" id="female2">
+                            <label class="form-check-label" for="female2">Female</label>
+                        </div>
+                    </div>
+                    <span asp-validation-for="NewStudent.Gender" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="major2">Course Major</label>
+                        <select asp-for="NewStudent.CourseMajor" class="form-select" id="CourseMajor2" required>
+                            <option value="" disabled selected>Select a major</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Networking">Networking</option>
+                            <option value="Professional Practice">Professional Practice</option>
+                            <option value="Database Design & Development">Database Design & Development</option>
+                            <option value="Security">Security</option>
+                            <option value="Managing a Successful Computing Project">Managing a Successful Computing Project</option>
+                            <option value="Website Design & Development">Website Design & Development</option>
+                            <option value="Software Development Life Cycle">Software Development Life Cycle</option>
+                            <option value="Business Intelligence">Business Intelligence</option>
+                            <option value="Cloud computing">Cloud computing</option>
+                            <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                            <option value="Advanced Programming">Advanced Programming</option>
+                            <option value="Internet of Things">Internet of Things</option>
+                            <option value="Application Development">Application Development</option>
+                            <option value="Computing Research Project">Computing Research Project</option>
+                            <option value="Semi-Project">Semi-Project</option>
+                            <option value="Planning a Computing Project">Planning a Computing Project</option>
+                            <option value="Discrete Maths">Discrete Maths</option>
+                            <option value="Data Analytics">Data Analytics</option>
+                            <option value="Business Process Support">Business Process Support</option>
+                            <option value="Applied Programming and Design Principles">Applied Programming and Design Principles</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="NewStudent.CourseMajor" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-info format-btn" value="Update">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Student table -->
+    <table class="table table-striped ">
+        <thead>
+            <tr class="title-table-stu bg-dark">
+                <th class="text-light" scope="col">ID Student</th>
+                <th class="text-light" scope="col">Name of Student</th>
+                <th class="text-light" scope="col">DateOfBirth</th>
+                <th class="text-light" scope="col">Gender</th>
+                <th class="text-light" scope="col">Course Major</th>
+                <th class="text-light" scope="col">Function</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.StudentList != null && Model.StudentList.Any())
+            {
+                foreach (var student in Model.StudentList)
+                {
+                    <tr>
+                        <td>@student.StudentId</td>
+                        <td>@student.StudentName</td>
+                        <td>@student.DateOfBirth.ToString("MM/dd/yyyy")</td>
+                        <td>@(student.Gender ? "Male" : "Female")</td>
+                        <td>@student.CourseMajor</td>
+                        <td class="form-cell d-flex">
+                            <a asp-page="/Students/Details" asp-route-id="@student.StudentId" class="btn btn-outline-secondary" id="btn-detail">Detail</a>
+                            <a asp-page-handler="Edit" asp-route-id="@student.StudentId" asp-route-showEditForm="true" class="btn btn-outline-secondary" id="btn-edit">Edit</a>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@student.StudentId" class="mb-0 ms-2">
+                                <button type="submit" class="btn btn-outline-secondary">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6">No students found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/even.js"></script>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

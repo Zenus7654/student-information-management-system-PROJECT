@@ -1,0 +1,42 @@
+﻿@page "{id:int}"
+@model SIMS.Pages.Courses.DetailsModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container position-center">
+    <div class="form-control form-info">
+        <h2 class="title-form">
+            Detail
+        </h2>
+        <div class="group-column">
+            <div class="mb-3">
+                <label class="form-label">Course ID</label>
+                <p class="form-control">@Model.Course.CourseId</p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Course Name</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Course.CourseName) ? "empty" : Model.Course.CourseName)
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Credit</label>
+                <p class="form-control">
+                    @(Model.Course.Credits == 0 ? "empty" : Model.Course.Credits.ToString())
+                </p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description of Course</label>
+                <p class="form-control">
+                    @(string.IsNullOrEmpty(Model.Course.Description) ? "empty" : Model.Course.Description)
+                </p>
+            </div>
+            </div>
+            <div class="mb-3">
+                <a asp-page="/Courses/Index" class="btn btn-outline-secondary format-btn">Quay lại</a>
+            </div>
+        </div>
+    </div>
+</div>

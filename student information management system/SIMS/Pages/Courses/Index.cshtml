@@ -1,0 +1,160 @@
+﻿@page
+@model SIMS.Pages.Courses.IndexModel
+@{
+    ViewData["Title"] = "Course Page";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["WarningMessage"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["WarningMessage"]
+    </div>
+}
+
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["InfoMessage"]
+    </div>
+}
+
+<div class="container">
+    <h2>Course List</h2>
+
+    <div class="container group-row search-add-info">
+        <!-- Form search Course -->
+        <form class="form-search-info" method="post" asp-page-handler="Search">
+            <div class="input-group mb-3">
+                <input asp-for="SearchTerm" type="text" class="form-control" placeholder="Enter a courseBtec's name to search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass" style="margin: 0"></i></button>
+            </div>
+        </form>
+        <!-- Button add Course-->
+        <div class="mb-3">
+            <button type="button" class="btn btn-outline-primary" id="btn-add">Add Course<i class="fa-solid fa-book-medical"></i></button>
+        </div>
+    </div>
+
+    <!-- Form add Course -->
+    <div class="container position-center">
+        <form class="form-control form-add-info" method="post" asp-page-handler="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h2 class="title-form">
+                Form Add Course
+                <button type="button" class="btn btn-outline-danger" id="btn-close"><i class="fa-solid fa-xmark"></i>Close</button>
+            </h2>
+            <div class="group-column">
+                <!-- Form fields for adding Course -->
+                <div class="mb-3">
+                    <label asp-for="NewCourse.CourseName" class="form-label">Course Name</label>
+                    <input asp-for="NewCourse.CourseName" type="text" class="form-control" placeholder="Input course name">
+                    <span asp-validation-for="NewCourse.CourseName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewCourse.Credits" class="form-label">Credits</label>
+                    <input asp-for="NewCourse.Credits" type="text" class="form-control" placeholder="Input credits">
+                    <span asp-validation-for="NewCourse.Credits" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewCourse.Description" class="form-label">Description of Course</label>
+                    <textarea asp-for="NewCourse.Description" class="form-control" placeholder="Input description"></textarea>
+                    <span asp-validation-for="NewCourse.Description" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-info format-btn" value="Create">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Form edit Course -->
+    <div class="container position-center">
+        <form class="form-control form-edit-info" method="post" asp-page-handler="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h2 class="title-form">
+                Form Edit Course
+                <button type="button" class="btn btn-outline-danger" id="btn-close"><i class="fa-solid fa-xmark"></i>Close</button>
+            </h2>
+            <div class="group-column">
+                <input type="hidden" asp-for="NewCourse.CourseId" />
+                <div class="mb-3">
+                    <label asp-for="NewCourse.CourseName" class="form-label">Course Name</label>
+                    <input asp-for="NewCourse.CourseName" type="text" class="form-control" placeholder="Input course name">
+                    <span asp-validation-for="NewCourse.CourseName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewCourse.Credits" class="form-label">Credits</label>
+                    <input asp-for="NewCourse.Credits" type="text" class="form-control" placeholder="Input credits">
+                    <span asp-validation-for="NewCourse.Credits" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="NewCourse.Description" class="form-label">Description of Course</label>
+                    <textarea asp-for="NewCourse.Description" class="form-control" placeholder="Input description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-info format-btn" value="Update">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Student table -->
+    <table class="table table-striped">
+        <thead>
+            <tr class="title-table-course bg-dark">
+                <th class="text-light" scope="col">ID</th>
+                <th class="text-light" scope="col">Course Name</th>
+                <th class="text-light" scope="col">Credit</th>
+                <th class="text-light" scope="col">Description of Course</th>
+                <th class="text-light" scope="col">Function</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.CourseList != null && Model.CourseList.Any())
+            {
+                @foreach (var course in Model.CourseList)
+                {
+                    <tr>
+                        <td>@course.CourseId</td>
+                        <td>@course.CourseName</td>
+                        <td>@course.Credits</td>
+                        <td>@course.Description</td>
+                        <td class='form-cell d-flex'>
+                            <a asp-page="/Courses/Details" asp-route-id="@course.CourseId" class="btn btn-outline-secondary" id="btn-detail">Detail</a>
+                            <a asp-page-handler="Edit" asp-route-id="@course.CourseId" asp-route-showEditForm="true" class="btn btn-outline-secondary" id="btn-edit">Edit</a>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@course.CourseId">
+                                <button class="btn btn-outline-secondary">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6">No courses found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/even.js"></script>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
